@@ -5,7 +5,7 @@ export default function Header() {
   const partners = [
     { name: 'IQAC', src: '/assets/images/iqac_logo.png' },
     { name: 'SDG Goals', src: '/assets/images/sdg_logo.png' },
-    { name: 'Innovation Hub', src: '/assets/images/innovation_hub_logo.jpg' },
+    { name: 'Innovation Hub', src: '/assets/images/innovation_hub_logo.png' },
   ];
 
   return (
@@ -37,11 +37,11 @@ export default function Header() {
             whileHover={{ scale: 1.05, filter: 'drop-shadow(0 0 10px rgba(0, 229, 255, 0.4))' }}
           >
             {partner.name === 'Innovation Hub' ? (
-              <div className="w-[45px] md:w-[52px] h-[45px] md:h-[52px] rounded-full bg-white flex items-center justify-center p-0.5 border border-white/20 overflow-hidden select-none">
+              <div className="h-[45px] md:h-[52px] w-auto bg-white rounded-xl px-3 py-1 flex items-center justify-center border border-white/20 shadow-md select-none">
                 <img 
                   src={partner.src} 
                   alt={partner.name} 
-                  className="w-full h-full object-contain"
+                  className="h-full w-auto object-contain"
                 />
               </div>
             ) : (

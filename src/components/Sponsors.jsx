@@ -23,7 +23,7 @@ export default function Sponsors() {
     {
       name: 'Innovation Hub',
       role: 'Incubation Partner',
-      src: '/assets/images/innovation_hub_logo.jpg'
+      src: '/assets/images/innovation_hub_logo.png'
     },
     {
       name: 'SDG Goals',
