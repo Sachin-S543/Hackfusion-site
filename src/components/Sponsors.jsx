@@ -23,12 +23,12 @@ export default function Sponsors() {
     {
       name: 'Innovation Hub',
       role: 'Incubation Partner',
-      src: '/assets/images/innovation_hub_logo.png'
+      src: '/assets/images/innovation_hub_logo.jpg'
     },
     {
       name: 'SDG Goals',
       role: 'Sustainability Framework',
-      src: '/assets/images/sdg_logo.jpg'
+      src: '/assets/images/sdg_logo.png'
     },
     {
       name: 'TNJUG',
@@ -74,11 +74,11 @@ export default function Sponsors() {
               <div className="absolute inset-0 bg-accentBlue/0 group-hover:bg-accentBlue/5 rounded-2xl transition-all duration-300 -z-10"></div>
               
               {/* Logo block */}
-              <div className="h-24 w-full flex items-center justify-center mb-4 bg-white rounded-xl p-3.5 shadow-md border border-white/10 select-none">
+              <div className="h-24 w-full flex items-center justify-center mb-4 bg-white rounded-xl p-2 shadow-md border border-white/10 select-none">
                 <img 
                   src={partner.src} 
                   alt={partner.name} 
-                  className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                  className="max-h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
 

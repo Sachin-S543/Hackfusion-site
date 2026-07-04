@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 export default function Header() {
   const partners = [
     { name: 'IQAC', src: '/assets/images/iqac_logo.png' },
-    { name: 'SDG Goals', src: '/assets/images/sdg_logo.jpg' },
-    { name: 'Innovation Hub', src: '/assets/images/innovation_hub_logo.png' },
+    { name: 'SDG Goals', src: '/assets/images/sdg_logo.png' },
+    { name: 'Innovation Hub', src: '/assets/images/innovation_hub_logo.jpg' },
   ];
 
   return (
