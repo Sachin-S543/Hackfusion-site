@@ -32,8 +32,8 @@ export default function EventCard() {
           </div>
 
           {/* 2. Venue */}
-          <div className="flex flex-col text-left md:border-l md:border-white/5 md:pl-6 justify-center">
-            <span className="block text-[10px] tracking-[0.1em] text-textSecondary uppercase font-spaceGrotesk font-semibold mb-2">
+          <div className="flex flex-col text-left md:border-l md:border-white/5 md:pl-12 justify-center">
+            <span className="block text-[10px] tracking-[0.1em] text-textSecondary uppercase font-spaceGrotesk font-semibold mb-2 w-12 text-center pl-0.5">
               Venue
             </span>
             <div className="flex items-center gap-4">

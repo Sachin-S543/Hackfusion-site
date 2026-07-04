@@ -5,7 +5,7 @@ import { Clock } from 'lucide-react';
 export default function Timeline() {
   const milestones = [
     {
-      date: 'July 1, 2026',
+      date: 'July 4, 2026',
       title: 'Registration Opens',
       desc: 'Online registrations kick off. Set up your cross-disciplinary team of 4 students and invite your professional mentor.'
     },

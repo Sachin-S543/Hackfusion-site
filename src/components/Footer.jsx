@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Mail } from 'lucide-react';
+import { MapPin, Mail, MessageCircle } from 'lucide-react';
 
 export default function Footer() {
   const handleNavClick = (id) => {
@@ -60,7 +60,7 @@ export default function Footer() {
               >
                 <MapPin size={18} className="text-accentBlue mt-0.5 flex-shrink-0" />
                 <div>
-                  <strong className="text-white block font-medium hover:text-accentBlue transition-colors">VET Institute of Arts and Science</strong>
+                  <strong className="text-white block font-medium hover:text-accentBlue transition-colors">Vellalar Educational Trust Institute of Arts and Science</strong>
                   Thindal, Erode,<br />Tamil Nadu - 638 012.
                 </div>
               </a>
@@ -72,6 +72,22 @@ export default function Footer() {
                   hackfusion@vetias.ac.in
                 </div>
               </div>
+
+              {/* WhatsApp Support Group */}
+              <a 
+                href="https://chat.whatsapp.com/invite/hackfusion2026"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-3 hover:text-white transition-colors duration-200"
+              >
+                <MessageCircle size={18} className="text-[#25D366] mt-0.5 flex-shrink-0" />
+                <div>
+                  <strong className="text-white block font-medium">WhatsApp Support</strong>
+                  <span className="text-textSecondary block text-xs mt-0.5 leading-normal">
+                    Join WhatsApp Group to clarify queries with the organizing committee
+                  </span>
+                </div>
+              </a>
             </div>
           </div>
 

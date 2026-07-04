@@ -36,11 +36,21 @@ export default function Header() {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             whileHover={{ scale: 1.05, filter: 'drop-shadow(0 0 10px rgba(0, 229, 255, 0.4))' }}
           >
-            <img 
-              src={partner.src} 
-              alt={partner.name} 
-              className={`h-[45px] md:h-[52px] ${partner.name === 'Innovation Hub' ? 'w-[45px] md:w-[52px] rounded-full object-cover border border-white/20' : 'w-auto object-contain rounded-md'} filter brightness-95 hover:brightness-100 transition-all duration-300`}
-            />
+            {partner.name === 'Innovation Hub' ? (
+              <div className="w-[45px] md:w-[52px] h-[45px] md:h-[52px] rounded-full bg-white flex items-center justify-center p-1.5 border border-white/20 overflow-hidden select-none">
+                <img 
+                  src={partner.src} 
+                  alt={partner.name} 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            ) : (
+              <img 
+                src={partner.src} 
+                alt={partner.name} 
+                className="h-[45px] md:h-[52px] w-auto object-contain rounded-md filter brightness-95 hover:brightness-100 transition-all duration-300"
+              />
+            )}
           </motion.div>
         ))}
       </div>
