@@ -4,7 +4,7 @@ import { MessageSquare, ShieldCheck, Zap, Award } from 'lucide-react';
 
 export default function About() {
   const stats = [
-    { value: '5', label: 'Challenge Tracks' },
+    { value: '12', label: 'Challenge Tracks' },
     { value: '07', label: 'August 2026' },
     { value: '6', label: 'Max Team Size' },
     { value: '100%', label: 'Free Registration' }

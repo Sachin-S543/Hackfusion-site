@@ -13,6 +13,7 @@ import {
   Zap, 
   Code2, 
   Lightbulb,
+  Globe,
   Cpu,
   Factory,
   ShieldCheck
@@ -91,11 +92,11 @@ export default function Tracks() {
       areas: ['Solar/wind grid logs', 'Load spike forecasting', 'Smart home dashboards', 'Energy saving automation']
     },
     {
-      title: 'Software Development Challenge (SDC)',
-      icon: Code2,
+      title: 'Sustainable Development Goals (SDG)',
+      icon: Globe,
       color: 'text-fuchsia-400 border-fuchsia-400/25 bg-fuchsia-400/5',
-      desc: 'Solve high-performance computing, clean API development, database optimization, or algorithmic speed problems.',
-      areas: ['High performance code', 'Database optimization', 'Clean REST/GraphQL APIs', 'Scalable systems']
+      desc: 'Create impactful tech solutions to solve real-world challenges aligned with the United Nations Sustainable Development Goals.',
+      areas: ['Good health & well-being', 'Clean water & sanitation', 'Climate action tech', 'Sustainable communities']
     },
     {
       title: 'Open Innovation',

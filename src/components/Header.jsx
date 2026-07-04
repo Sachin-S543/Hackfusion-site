@@ -39,7 +39,7 @@ export default function Header() {
             <img 
               src={partner.src} 
               alt={partner.name} 
-              className="h-[45px] md:h-[52px] w-auto object-contain rounded-md filter brightness-95 hover:brightness-100 transition-all duration-300"
+              className={`h-[45px] md:h-[52px] ${partner.name === 'Innovation Hub' ? 'w-[45px] md:w-[52px] rounded-full object-cover border border-white/20' : 'w-auto object-contain rounded-md'} filter brightness-95 hover:brightness-100 transition-all duration-300`}
             />
           </motion.div>
         ))}

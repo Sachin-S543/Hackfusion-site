@@ -32,25 +32,27 @@ export default function EventCard() {
           </div>
 
           {/* 2. Venue */}
-          <div className="flex items-center gap-4 text-left md:border-l md:border-white/5 md:pl-6">
-            <div className="w-12 h-12 rounded-xl bg-accentPurple/10 border border-accentPurple/20 flex items-center justify-center text-accentPurple flex-shrink-0">
-              <MapPin size={22} />
-            </div>
-            <div>
-              <span className="block text-[10px] tracking-[0.1em] text-textSecondary uppercase font-spaceGrotesk font-semibold mb-1">
-                Venue
-              </span>
-              <a 
-                href="https://www.google.com/maps?ll=11.323796,77.675389&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=9813310701461210882"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-accentPurple/10 border border-accentPurple/20 text-xs font-bold text-white hover:bg-accentPurple/20 hover:text-accentCyan hover:border-accentCyan/30 transition-all duration-300 shadow-[0_0_10px_rgba(124,92,255,0.15)] whitespace-nowrap"
-              >
-                <span className="text-accentPurple font-black">VETIAS</span>, Erode
-              </a>
-              <span className="block text-[9px] text-[#A9B3C1] mt-1.5 italic font-medium tracking-wide">
-                (Click for location)
-              </span>
+          <div className="flex flex-col text-left md:border-l md:border-white/5 md:pl-6 justify-center">
+            <span className="block text-[10px] tracking-[0.1em] text-textSecondary uppercase font-spaceGrotesk font-semibold mb-2">
+              Venue
+            </span>
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-xl bg-accentPurple/10 border border-accentPurple/20 flex items-center justify-center text-accentPurple flex-shrink-0">
+                <MapPin size={22} />
+              </div>
+              <div>
+                <a 
+                  href="https://www.google.com/maps?ll=11.323796,77.675389&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=9813310701461210882"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-accentPurple/10 border border-accentPurple/20 text-xs font-bold text-white hover:bg-accentPurple/20 hover:text-accentCyan hover:border-accentCyan/30 transition-all duration-300 shadow-[0_0_10px_rgba(124,92,255,0.15)] whitespace-nowrap"
+                >
+                  <span className="text-accentPurple font-black">VETIAS</span>, Erode
+                </a>
+                <span className="block text-[9px] text-[#A9B3C1] mt-1.5 italic font-medium tracking-wide">
+                  (Click for location)
+                </span>
+              </div>
             </div>
           </div>
 

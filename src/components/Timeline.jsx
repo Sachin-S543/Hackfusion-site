@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Clock } from 'lucide-react';
 
 export default function Timeline() {
   const milestones = [
@@ -21,7 +22,8 @@ export default function Timeline() {
     {
       date: 'August 7, 2026',
       title: 'The Grand Finale',
-      desc: 'Non-stop coding, prototyping, mentorship check-ins, and final pitch presentations before the jury panels.'
+      desc: 'Non-stop coding, prototyping, mentorship check-ins, and final pitch presentations before the jury panels.',
+      timings: '9:00 a.m. to 7:00 p.m.'
     }
   ];
 
@@ -82,6 +84,15 @@ export default function Timeline() {
                       <p className="text-[#A9B3C1] text-xs sm:text-sm leading-relaxed">
                         {milestone.desc}
                       </p>
+                      {milestone.timings && (
+                        <div className="flex items-center gap-2 mt-3 text-accentPurple text-xs sm:text-sm font-medium">
+                          <Clock size={16} className="text-accentPurple flex-shrink-0" />
+                          <span>
+                            <span className="font-semibold text-accentPurple">Timings:</span>{' '}
+                            <span className="text-[#A9B3C1]">{milestone.timings}</span>
+                          </span>
+                        </div>
+                      )}
                     </motion.div>
                   </div>
 
