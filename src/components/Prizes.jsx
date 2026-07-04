@@ -47,19 +47,26 @@ export default function Prizes() {
     <section id="prizes" className="relative w-full py-20 px-6 md:px-12 scroll-mt-20 border-b border-white/5 bg-[#071322]/20">
       <div className="absolute bottom-[10%] left-[-5%] w-[450px] h-[450px] bg-[radial-gradient(circle,rgba(45,127,249,0.05)_0%,rgba(45,127,249,0)_70%)] -z-10 animate-pulse-slow"></div>
       
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start gap-12 lg:gap-16">
+      <div className="max-w-6xl mx-auto">
         
-        {/* Left Column: Prizes Cards & Diagram */}
-        <div className="w-full lg:w-2/3 flex flex-col text-left">
+        {/* Header Block (Full Width) */}
+        <div className="text-left mb-12">
           <span className="text-accentCyan font-spaceGrotesk text-xs sm:text-sm font-bold tracking-[0.2em] uppercase mb-3 block">
             Rewards
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black font-spaceGrotesk text-white uppercase tracking-wider mb-4">
             PRIZES & RECOGNITIONS
           </h2>
-          <p className="text-textSecondary max-w-xl text-sm sm:text-base mb-12">
+          <p className="text-textSecondary max-w-xl text-sm sm:text-base">
             We reward innovation and execution with exciting incentives to help you continue your startup journey.
           </p>
+        </div>
+
+        {/* 2-Column Content Layout */}
+        <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16 w-full">
+          
+          {/* Left Column: Prizes Cards & Diagram */}
+          <div className="w-full lg:w-2/3 flex flex-col text-left">
 
           {/* Trophy Prizes Diagram Block */}
           <div className="glass-card rounded-[22px] p-6 sm:p-8 border-white/10 w-full mb-10 relative overflow-hidden flex flex-col items-center">
@@ -167,36 +174,37 @@ export default function Prizes() {
               );
             })}
           </div>
-        </div>
-
-        {/* Right Column: Support & Logistics */}
-        <div className="w-full lg:w-1/3 flex flex-col text-left lg:pt-24">
-          <h3 className="font-spaceGrotesk text-xl sm:text-2xl font-bold text-white mb-8 tracking-wide">
-            Event Support & Logistics
-          </h3>
-          
-          <div className="flex flex-col gap-8 w-full">
-            {logistics.map((item, i) => {
-              const Icon = item.icon;
-              return (
-                <div key={i} className="flex gap-4 items-start text-left">
-                  <div className="w-10 h-10 rounded-lg bg-accentCyan/10 border border-accentCyan/20 text-accentCyan flex items-center justify-center flex-shrink-0">
-                    <Icon size={18} />
-                  </div>
-                  <div>
-                    <h4 className="font-spaceGrotesk text-base font-bold text-white mb-1.5 leading-snug">
-                      {item.title}
-                    </h4>
-                    <p className="text-[#A9B3C1] text-xs sm:text-sm leading-relaxed">
-                      {item.desc}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
           </div>
-        </div>
 
+          {/* Right Column: Support & Logistics */}
+          <div className="w-full lg:w-1/3 flex flex-col text-left">
+            <h3 className="font-spaceGrotesk text-xl sm:text-2xl font-bold text-white mb-8 tracking-wide">
+              Event Support & Logistics
+            </h3>
+            
+            <div className="flex flex-col gap-8 w-full">
+              {logistics.map((item, i) => {
+                const Icon = item.icon;
+                return (
+                  <div key={i} className="flex gap-4 items-start text-left">
+                    <div className="w-10 h-10 rounded-lg bg-accentCyan/10 border border-accentCyan/20 text-accentCyan flex items-center justify-center flex-shrink-0">
+                      <Icon size={18} />
+                    </div>
+                    <div>
+                      <h4 className="font-spaceGrotesk text-base font-bold text-white mb-1.5 leading-snug">
+                        {item.title}
+                      </h4>
+                      <p className="text-[#A9B3C1] text-xs sm:text-sm leading-relaxed">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
   );
