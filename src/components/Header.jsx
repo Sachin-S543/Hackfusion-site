@@ -37,11 +37,11 @@ export default function Header() {
             whileHover={{ scale: 1.05, filter: 'drop-shadow(0 0 10px rgba(0, 229, 255, 0.4))' }}
           >
             {partner.name === 'Innovation Hub' ? (
-              <div className="h-[45px] md:h-[52px] w-auto bg-white rounded-xl px-3 py-1 flex items-center justify-center border border-white/20 shadow-md select-none">
+              <div className="w-[45px] md:w-[52px] h-[45px] md:h-[52px] rounded-full bg-white flex items-center justify-center border border-white/20 shadow-md overflow-hidden select-none">
                 <img 
                   src={partner.src} 
                   alt={partner.name} 
-                  className="h-full w-auto object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
             ) : (
