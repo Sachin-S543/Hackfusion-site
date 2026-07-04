@@ -12,8 +12,8 @@ export default function About() {
 
   return (
     <section id="about" className="relative w-full py-20 px-6 md:px-12 bg-[#071322]/20 border-b border-white/5 scroll-mt-20">
-      <div className="absolute top-[20%] left-[-5%] w-[400px] h-[400px] bg-accentBlue/10 blur-[130px] rounded-full -z-10"></div>
-      <div className="absolute bottom-[20%] right-[-5%] w-[400px] h-[400px] bg-accentPurple/10 blur-[130px] rounded-full -z-10"></div>
+      <div className="absolute top-[20%] left-[-5%] w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(45,127,249,0.1)_0%,rgba(45,127,249,0)_70%)] -z-10"></div>
+      <div className="absolute bottom-[20%] right-[-5%] w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(124,92,255,0.1)_0%,rgba(124,92,255,0)_70%)] -z-10"></div>
       
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
         

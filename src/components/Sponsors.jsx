@@ -44,7 +44,7 @@ export default function Sponsors() {
 
   return (
     <section id="sponsors" className="relative w-full py-20 px-6 md:px-12 scroll-mt-20 border-b border-white/5 bg-[#071322]/10">
-      <div className="absolute top-[30%] left-[5%] w-[350px] h-[350px] bg-accentPurple/5 blur-[120px] rounded-full -z-10 animate-pulse-slow"></div>
+      <div className="absolute top-[30%] left-[5%] w-[350px] h-[350px] bg-[radial-gradient(circle,rgba(124,92,255,0.05)_0%,rgba(124,92,255,0)_70%)] -z-10 animate-pulse-slow"></div>
 
       <div className="max-w-6xl mx-auto">
         

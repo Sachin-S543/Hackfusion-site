@@ -45,7 +45,7 @@ export default function Prizes() {
 
   return (
     <section id="prizes" className="relative w-full py-20 px-6 md:px-12 scroll-mt-20 border-b border-white/5 bg-[#071322]/20">
-      <div className="absolute bottom-[10%] left-[-5%] w-[450px] h-[450px] bg-accentBlue/5 blur-[130px] rounded-full -z-10 animate-pulse-slow"></div>
+      <div className="absolute bottom-[10%] left-[-5%] w-[450px] h-[450px] bg-[radial-gradient(circle,rgba(45,127,249,0.05)_0%,rgba(45,127,249,0)_70%)] -z-10 animate-pulse-slow"></div>
       
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start gap-12 lg:gap-16">
         

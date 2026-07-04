@@ -27,7 +27,7 @@ export default function Timeline() {
 
   return (
     <section id="timeline" className="relative w-full py-20 px-6 md:px-12 scroll-mt-20 border-b border-white/5 bg-[#071322]/10">
-      <div className="absolute top-[20%] left-[-5%] w-[400px] h-[400px] bg-accentPurple/5 blur-[120px] rounded-full -z-10"></div>
+      <div className="absolute top-[20%] left-[-5%] w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(124,92,255,0.05)_0%,rgba(124,92,255,0)_70%)] -z-10"></div>
       
       <div className="max-w-6xl mx-auto">
         
@@ -54,7 +54,7 @@ export default function Timeline() {
             {milestones.map((milestone, i) => {
               const isEven = i % 2 === 0;
               return (
-                <div key={i} className="relative flex flex-col md:flex-row items-start md:items-center">
+                <div key={i} className="relative flex flex-col md:flex-row items-start md:items-center w-full">
                   
                   {/* Timeline Node Dot */}
                   {/* On Mobile: aligned left at the border. On Desktop: aligned in the center. */}
@@ -62,75 +62,27 @@ export default function Timeline() {
                     <div className="w-1.5 h-1.5 rounded-full bg-accentCyan animate-ping"></div>
                   </div>
 
-                  {/* Left Side spacer/content block for desktop */}
-                  <div className={`w-full md:w-1/2 flex justify-start md:justify-end pr-0 md:pr-12 ${isEven ? 'md:order-1' : 'md:order-2 opacity-0 pointer-events-none hidden md:block'}`}>
-                    {isEven && (
-                      <motion.div 
-                        className="glass-card rounded-2xl p-6 border-white/10 text-left w-full shadow-lg hover:border-white/20 duration-300"
-                        initial={{ opacity: 0, x: -30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
-                        transition={{ duration: 0.5 }}
-                      >
-                        <span className="inline-block text-xs font-bold font-spaceGrotesk text-accentCyan mb-2 px-2.5 py-1 rounded bg-accentCyan/5 border border-accentCyan/15">
-                          {milestone.date}
-                        </span>
-                        <h3 className="font-spaceGrotesk text-lg font-bold text-white mb-2">
-                          {milestone.date === 'August 7, 2026' ? (
-                            <span className="bg-gradient-to-r from-accentBlue to-accentPurple bg-clip-text text-transparent">{milestone.title}</span>
-                          ) : milestone.title}
-                        </h3>
-                        <p className="text-[#A9B3C1] text-xs sm:text-sm leading-relaxed">
-                          {milestone.desc}
-                        </p>
-                      </motion.div>
-                    )}
-                  </div>
-
-                  {/* Right Side spacer/content block for desktop */}
-                  <div className={`w-full md:w-1/2 flex justify-start pl-0 md:pl-12 ${!isEven ? 'md:order-2' : 'md:order-1 opacity-0 pointer-events-none hidden md:block'}`}>
-                    {!isEven && (
-                      <motion.div 
-                        className="glass-card rounded-2xl p-6 border-white/10 text-left w-full shadow-lg hover:border-white/20 duration-300"
-                        initial={{ opacity: 0, x: 30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
-                        transition={{ duration: 0.5 }}
-                      >
-                        <span className="inline-block text-xs font-bold font-spaceGrotesk text-accentPurple mb-2 px-2.5 py-1 rounded bg-accentPurple/5 border border-accentPurple/15">
-                          {milestone.date}
-                        </span>
-                        <h3 className="font-spaceGrotesk text-lg font-bold text-white mb-2">
-                          {milestone.title}
-                        </h3>
-                        <p className="text-[#A9B3C1] text-xs sm:text-sm leading-relaxed">
-                          {milestone.desc}
-                        </p>
-                      </motion.div>
-                    )}
-                  </div>
-
-                  {/* Mobile-only view fallback for alternating slots */}
-                  <div className="block md:hidden w-full">
-                    {!isEven && (
-                      <motion.div 
-                        className="glass-card rounded-2xl p-6 border-white/10 text-left w-full shadow-lg"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.4 }}
-                      >
-                        <span className="inline-block text-xs font-bold font-spaceGrotesk text-accentPurple mb-2 px-2.5 py-1 rounded bg-accentPurple/5 border border-accentPurple/15">
-                          {milestone.date}
-                        </span>
-                        <h3 className="font-spaceGrotesk text-lg font-bold text-white mb-2">
-                          {milestone.title}
-                        </h3>
-                        <p className="text-[#A9B3C1] text-xs sm:text-sm leading-relaxed">
-                          {milestone.desc}
-                        </p>
-                      </motion.div>
-                    )}
+                  {/* Content card: on desktop occupies half width, alternates left/right. On mobile occupies full width. */}
+                  <div className={`w-full md:w-1/2 flex ${isEven ? 'md:justify-end md:pr-12 md:mr-auto' : 'md:justify-start md:pl-12 md:ml-auto'}`}>
+                    <motion.div 
+                      className="glass-card rounded-2xl p-6 border-white/10 text-left w-full shadow-lg hover:border-white/20 duration-300"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, margin: "-100px" }}
+                      transition={{ duration: 0.5 }}
+                    >
+                      <span className={`inline-block text-xs font-bold font-spaceGrotesk mb-2 px-2.5 py-1 rounded border ${isEven ? 'text-accentCyan bg-accentCyan/5 border-accentCyan/15' : 'text-accentPurple bg-accentPurple/5 border-accentPurple/15'}`}>
+                        {milestone.date}
+                      </span>
+                      <h3 className="font-spaceGrotesk text-lg font-bold text-white mb-2">
+                        {milestone.date === 'August 7, 2026' ? (
+                          <span className="bg-gradient-to-r from-accentBlue to-accentPurple bg-clip-text text-transparent">{milestone.title}</span>
+                        ) : milestone.title}
+                      </h3>
+                      <p className="text-[#A9B3C1] text-xs sm:text-sm leading-relaxed">
+                        {milestone.desc}
+                      </p>
+                    </motion.div>
                   </div>
 
                 </div>

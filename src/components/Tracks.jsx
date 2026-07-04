@@ -143,7 +143,7 @@ export default function Tracks() {
 
   return (
     <section id="tracks" className="relative w-full py-20 px-6 md:px-12 scroll-mt-20 border-b border-white/5">
-      <div className="absolute top-[30%] right-[-5%] w-[450px] h-[450px] bg-accentCyan/5 blur-[140px] rounded-full -z-10 animate-pulse-slow"></div>
+      <div className="absolute top-[30%] right-[-5%] w-[450px] h-[450px] bg-[radial-gradient(circle,rgba(0,229,255,0.05)_0%,rgba(0,229,255,0)_70%)] -z-10 animate-pulse-slow"></div>
       
       <div className="max-w-6xl mx-auto">
         

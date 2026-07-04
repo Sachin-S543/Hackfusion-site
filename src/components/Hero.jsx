@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative w-full min-h-[90vh] flex flex-col items-center justify-center py-12 px-4 overflow-hidden">
       {/* Background Glows Specific to Hero */}
-      <div className="absolute top-[35%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] max-w-[800px] h-[350px] bg-gradient-to-r from-accentBlue/20 via-accentPurple/25 to-accentCyan/15 blur-[120px] rounded-full -z-10 animate-pulse-slow"></div>
+      <div className="absolute top-[35%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] max-w-[800px] h-[350px] bg-[radial-gradient(ellipse_at_center,rgba(45,127,249,0.2)_0%,rgba(124,92,255,0.25)_40%,rgba(0,229,255,0.15)_70%,transparent_100%)] -z-10 animate-pulse-slow"></div>
 
       {/* Hero Layout Container */}
       <div className="relative w-full max-w-5xl flex flex-col items-center justify-center text-center z-10">
