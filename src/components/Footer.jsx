@@ -60,7 +60,7 @@ export default function Footer() {
               >
                 <MapPin size={18} className="text-accentBlue mt-0.5 flex-shrink-0" />
                 <div>
-                  <strong className="text-white block font-medium hover:text-accentBlue transition-colors">Vellalar Educational Trust Institute of Arts and Science</strong>
+                  <strong className="text-white block font-medium hover:text-accentBlue transition-colors">VET Institute of Arts and science (Co-education) College</strong>
                   Thindal, Erode,<br />Tamil Nadu - 638 012.
                 </div>
               </a>
@@ -75,7 +75,7 @@ export default function Footer() {
 
               {/* WhatsApp Support Group */}
               <a 
-                href="https://chat.whatsapp.com/invite/hackfusion2026"
+                href="https://chat.whatsapp.com/CHqxSWCdS8aCrMPccJzS6X"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start gap-3 hover:text-white transition-colors duration-200"
