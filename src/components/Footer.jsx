@@ -60,7 +60,7 @@ export default function Footer() {
               >
                 <MapPin size={18} className="text-accentBlue mt-0.5 flex-shrink-0" />
                 <div>
-                  <strong className="text-white block font-medium hover:text-accentBlue transition-colors">VET Institute of Arts and science (Co-education) College</strong>
+                  <strong className="text-white block font-medium hover:text-accentBlue transition-colors">VET Institute of Arts and Science (Co-education) College</strong>
                   Thindal, Erode,<br />Tamil Nadu - 638 012.
                 </div>
               </a>
