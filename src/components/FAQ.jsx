@@ -16,7 +16,7 @@ export default function FAQ() {
     },
     {
       q: 'What is the cost of registration for the event?',
-      a: 'Participation in HackFusion 2026 is 100% free. Food, accommodation during the event, labs access, and high-speed Wi-Fi are fully sponsored by our organizers.'
+      a: 'Participation in HackFusion 2026 is 100% free. Food, labs access, and high-speed Wi-Fi are fully sponsored by our organizers.'
     },
     {
       q: 'What are the prizes and perks for the participants?',
