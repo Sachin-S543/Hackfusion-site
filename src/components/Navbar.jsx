@@ -101,21 +101,20 @@ export default function Navbar() {
             Register Now <ArrowRight size={15} />
           </motion.a>
           
-          <div className="flex items-center gap-2.5 text-[10px] font-spaceGrotesk font-bold tracking-wide text-textSecondary select-none">
+          <div className="flex items-center gap-2 text-white select-none">
             <a 
               href={downloadTemplateUrl}
               download="HackFusion Template.pptx"
-              className="flex items-center gap-1 hover:text-[#00E5FF] transition-colors duration-300"
+              className="flex items-center gap-1 px-3 py-1.5 rounded-full font-spaceGrotesk text-[9px] font-bold bg-gradient-to-r from-accentBlue to-[#526DFF] shadow-[0_2px_10px_rgba(45,127,249,0.25)] hover:shadow-[0_2px_15px_rgba(45,127,249,0.45)] hover:brightness-105 transition-all duration-300"
             >
               <Download size={10} />
               Download Template
             </a>
-            <span className="text-white/10">|</span>
             <a 
               href={uploadTemplateUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 hover:text-[#00E5FF] transition-colors duration-300"
+              className="flex items-center gap-1 px-3 py-1.5 rounded-full font-spaceGrotesk text-[9px] font-bold bg-gradient-to-r from-[#526DFF] to-accentPurple shadow-[0_2px_10px_rgba(124,92,255,0.25)] hover:shadow-[0_2px_15px_rgba(124,92,255,0.45)] hover:brightness-105 transition-all duration-300"
             >
               <Upload size={10} />
               Upload Template
@@ -160,11 +159,11 @@ export default function Navbar() {
             Register Now <ArrowRight size={18} />
           </a>
           
-          <div className="grid grid-cols-2 gap-3 mt-1">
+          <div className="grid grid-cols-2 gap-3 mt-2">
             <a
               href={downloadTemplateUrl}
               download="HackFusion Template.pptx"
-              className="flex items-center justify-center gap-1.5 py-2 rounded-xl font-spaceGrotesk text-xs font-bold text-[#A9B3C1] border border-white/10 hover:border-white/20 hover:text-white hover:bg-white/10 transition-all duration-300 bg-white/5"
+              className="flex items-center justify-center gap-1.5 py-2.5 rounded-full font-spaceGrotesk text-xs font-bold text-white bg-gradient-to-r from-accentBlue to-[#526DFF] shadow-[0_2px_10px_rgba(45,127,249,0.25)] hover:shadow-[0_2px_15px_rgba(45,127,249,0.45)] hover:brightness-105 transition-all duration-300"
             >
               <Download size={12} />
               Download Template
@@ -173,7 +172,7 @@ export default function Navbar() {
               href={uploadTemplateUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-1.5 py-2 rounded-xl font-spaceGrotesk text-xs font-bold text-[#A9B3C1] border border-white/10 hover:border-white/20 hover:text-white hover:bg-white/10 transition-all duration-300 bg-white/5"
+              className="flex items-center justify-center gap-1.5 py-2.5 rounded-full font-spaceGrotesk text-xs font-bold text-white bg-gradient-to-r from-[#526DFF] to-accentPurple shadow-[0_2px_10px_rgba(124,92,255,0.25)] hover:shadow-[0_2px_15px_rgba(124,92,255,0.45)] hover:brightness-105 transition-all duration-300"
             >
               <Upload size={12} />
               Upload Template

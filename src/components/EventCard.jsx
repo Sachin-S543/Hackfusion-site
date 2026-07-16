@@ -109,23 +109,22 @@ export default function EventCard() {
             Register Your Team <ArrowRight size={15} />
           </motion.a>
           
-          <div className="flex items-center justify-center gap-3 text-xs font-spaceGrotesk font-bold text-textSecondary select-none">
+          <div className="flex flex-col sm:flex-row items-center gap-3 w-full justify-center">
             <a 
               href={downloadTemplateUrl}
               download="HackFusion Template.pptx"
-              className="flex items-center gap-1 hover:text-[#00E5FF] transition-colors duration-300"
+              className="flex items-center justify-center gap-2 w-full sm:w-auto px-5 py-2.5 rounded-full font-spaceGrotesk text-xs font-bold text-white bg-gradient-to-r from-accentBlue to-[#526DFF] shadow-[0_4px_12px_rgba(45,127,249,0.25)] hover:shadow-[0_4px_20px_rgba(45,127,249,0.45)] hover:brightness-105 transition-all duration-300"
             >
-              <Download size={13} />
+              <Download size={14} />
               Download Template
             </a>
-            <span className="text-white/10">|</span>
             <a 
               href={uploadTemplateUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 hover:text-[#00E5FF] transition-colors duration-300"
+              className="flex items-center justify-center gap-2 w-full sm:w-auto px-5 py-2.5 rounded-full font-spaceGrotesk text-xs font-bold text-white bg-gradient-to-r from-[#526DFF] to-accentPurple shadow-[0_4px_12px_rgba(124,92,255,0.25)] hover:shadow-[0_4px_20px_rgba(124,92,255,0.45)] hover:brightness-105 transition-all duration-300"
             >
-              <Upload size={13} />
+              <Upload size={14} />
               Upload Template
             </a>
           </div>
