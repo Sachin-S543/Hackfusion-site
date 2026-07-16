@@ -110,23 +110,27 @@ export default function EventCard() {
           </motion.a>
           
           <div className="flex flex-col sm:flex-row items-center gap-3 w-full justify-center">
-            <a 
+            <motion.a 
               href={downloadTemplateUrl}
               download="HackFusion Template.pptx"
-              className="flex items-center justify-center gap-2 w-full sm:w-auto px-5 py-2.5 rounded-full font-spaceGrotesk text-xs font-bold text-white bg-gradient-to-r from-accentBlue to-[#526DFF] shadow-[0_4px_12px_rgba(45,127,249,0.25)] hover:shadow-[0_4px_20px_rgba(45,127,249,0.45)] hover:brightness-105 transition-all duration-300"
+              className="flex items-center justify-center gap-2 w-full sm:w-auto px-5 py-3 rounded-xl font-spaceGrotesk text-xs font-bold text-white bg-gradient-to-r from-accentBlue to-[#526DFF] shadow-[0_4px_20px_rgba(45,127,249,0.25)] hover:shadow-[0_4px_30px_rgba(45,127,249,0.45)] hover:brightness-105 transition-all duration-300 cursor-pointer"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.98 }}
             >
-              <Download size={14} />
+              <Download size={15} />
               Download Template
-            </a>
-            <a 
+            </motion.a>
+            <motion.a 
               href={uploadTemplateUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full sm:w-auto px-5 py-2.5 rounded-full font-spaceGrotesk text-xs font-bold text-white bg-gradient-to-r from-[#526DFF] to-accentPurple shadow-[0_4px_12px_rgba(124,92,255,0.25)] hover:shadow-[0_4px_20px_rgba(124,92,255,0.45)] hover:brightness-105 transition-all duration-300"
+              className="flex items-center justify-center gap-2 w-full sm:w-auto px-5 py-3 rounded-xl font-spaceGrotesk text-xs font-bold text-white bg-gradient-to-r from-[#526DFF] to-accentPurple shadow-[0_4px_20px_rgba(124,92,255,0.25)] hover:shadow-[0_4px_30px_rgba(124,92,255,0.45)] hover:brightness-105 transition-all duration-300 cursor-pointer"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.98 }}
             >
-              <Upload size={14} />
+              <Upload size={15} />
               Upload Template
-            </a>
+            </motion.a>
           </div>
         </div>
 

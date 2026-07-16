@@ -88,13 +88,12 @@ export default function Navbar() {
           HACK<span className="text-accentBlue">FUSION</span>
         </div>
 
-        {/* Register Button & Templates (Desktop) */}
-        <div className="hidden md:flex flex-col items-center gap-1">
+        <div className="hidden md:flex flex-col items-center gap-2">
           <motion.a
             href={googleFormUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-2 rounded-full font-spaceGrotesk text-xs lg:text-sm font-bold text-white bg-gradient-to-r from-accentBlue via-[#526DFF] to-accentPurple shadow-[0_4px_15px_rgba(45,127,249,0.35)] hover:shadow-[0_4px_25_rgba(45,127,249,0.55)] hover:brightness-105 transition-all duration-300"
+            className="flex items-center gap-2 px-5 py-2 rounded-full font-spaceGrotesk text-xs lg:text-sm font-bold text-white bg-gradient-to-r from-accentBlue via-[#526DFF] to-accentPurple shadow-[0_4px_15px_rgba(45,127,249,0.35)] hover:shadow-[0_4px_25px_rgba(45,127,249,0.55)] hover:brightness-105 transition-all duration-300"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
           >
@@ -102,23 +101,27 @@ export default function Navbar() {
           </motion.a>
           
           <div className="flex items-center gap-2 text-white select-none">
-            <a 
+            <motion.a 
               href={downloadTemplateUrl}
               download="HackFusion Template.pptx"
-              className="flex items-center gap-1 px-3 py-1.5 rounded-full font-spaceGrotesk text-[9px] font-bold bg-gradient-to-r from-accentBlue to-[#526DFF] shadow-[0_2px_10px_rgba(45,127,249,0.25)] hover:shadow-[0_2px_15px_rgba(45,127,249,0.45)] hover:brightness-105 transition-all duration-300"
+              className="flex items-center gap-2 px-5 py-2 rounded-full font-spaceGrotesk text-xs lg:text-sm font-bold text-white bg-gradient-to-r from-accentBlue to-[#526DFF] shadow-[0_4px_15px_rgba(45,127,249,0.35)] hover:shadow-[0_4px_25px_rgba(45,127,249,0.55)] hover:brightness-105 transition-all duration-300 cursor-pointer"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.98 }}
             >
-              <Download size={10} />
+              <Download size={15} />
               Download Template
-            </a>
-            <a 
+            </motion.a>
+            <motion.a 
               href={uploadTemplateUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 px-3 py-1.5 rounded-full font-spaceGrotesk text-[9px] font-bold bg-gradient-to-r from-[#526DFF] to-accentPurple shadow-[0_2px_10px_rgba(124,92,255,0.25)] hover:shadow-[0_2px_15px_rgba(124,92,255,0.45)] hover:brightness-105 transition-all duration-300"
+              className="flex items-center gap-2 px-5 py-2 rounded-full font-spaceGrotesk text-xs lg:text-sm font-bold text-white bg-gradient-to-r from-[#526DFF] to-accentPurple shadow-[0_4px_15px_rgba(124,92,255,0.35)] hover:shadow-[0_4px_25px_rgba(124,92,255,0.55)] hover:brightness-105 transition-all duration-300 cursor-pointer"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.98 }}
             >
-              <Upload size={10} />
+              <Upload size={15} />
               Upload Template
-            </a>
+            </motion.a>
           </div>
         </div>
 
