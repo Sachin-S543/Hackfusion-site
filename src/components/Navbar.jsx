@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Menu, X } from 'lucide-react';
+import { ArrowRight, Menu, X, Download, Upload } from 'lucide-react';
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState('home');
@@ -49,6 +49,8 @@ export default function Navbar() {
   };
 
   const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLScCQPEPiyCjwCh6hwjfO0QaDMjrZFRSv2V1bvIjD7GY7j__1Q/viewform?usp=publish-editor";
+  const downloadTemplateUrl = "/HackFusion Template.pptx";
+  const uploadTemplateUrl = "https://forms.gle/nf2kEGKAT1NkF8uA7";
 
   return (
     <nav className="w-full sticky top-4 flex justify-center z-50 px-4">
@@ -86,18 +88,39 @@ export default function Navbar() {
           HACK<span className="text-accentBlue">FUSION</span>
         </div>
 
-        {/* Register Button (Desktop) */}
-        <div className="hidden md:block">
+        {/* Register Button & Templates (Desktop) */}
+        <div className="hidden md:flex flex-col items-center gap-1">
           <motion.a
             href={googleFormUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-2 rounded-full font-spaceGrotesk text-xs lg:text-sm font-bold text-white bg-gradient-to-r from-accentBlue via-[#526DFF] to-accentPurple shadow-[0_4px_15px_rgba(45,127,249,0.35)] hover:shadow-[0_4px_25px_rgba(45,127,249,0.55)] hover:brightness-105 transition-all duration-300"
+            className="flex items-center gap-2 px-5 py-2 rounded-full font-spaceGrotesk text-xs lg:text-sm font-bold text-white bg-gradient-to-r from-accentBlue via-[#526DFF] to-accentPurple shadow-[0_4px_15px_rgba(45,127,249,0.35)] hover:shadow-[0_4px_25_rgba(45,127,249,0.55)] hover:brightness-105 transition-all duration-300"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
           >
             Register Now <ArrowRight size={15} />
           </motion.a>
+          
+          <div className="flex items-center gap-2.5 text-[10px] font-spaceGrotesk font-bold tracking-wide text-textSecondary select-none">
+            <a 
+              href={downloadTemplateUrl}
+              download="HackFusion Template.pptx"
+              className="flex items-center gap-1 hover:text-[#00E5FF] transition-colors duration-300"
+            >
+              <Download size={10} />
+              Download Template
+            </a>
+            <span className="text-white/10">|</span>
+            <a 
+              href={uploadTemplateUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 hover:text-[#00E5FF] transition-colors duration-300"
+            >
+              <Upload size={10} />
+              Upload Template
+            </a>
+          </div>
         </div>
 
         {/* Mobile menu trigger */}
@@ -136,6 +159,26 @@ export default function Navbar() {
           >
             Register Now <ArrowRight size={18} />
           </a>
+          
+          <div className="grid grid-cols-2 gap-3 mt-1">
+            <a
+              href={downloadTemplateUrl}
+              download="HackFusion Template.pptx"
+              className="flex items-center justify-center gap-1.5 py-2 rounded-xl font-spaceGrotesk text-xs font-bold text-[#A9B3C1] border border-white/10 hover:border-white/20 hover:text-white hover:bg-white/10 transition-all duration-300 bg-white/5"
+            >
+              <Download size={12} />
+              Download Template
+            </a>
+            <a
+              href={uploadTemplateUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-1.5 py-2 rounded-xl font-spaceGrotesk text-xs font-bold text-[#A9B3C1] border border-white/10 hover:border-white/20 hover:text-white hover:bg-white/10 transition-all duration-300 bg-white/5"
+            >
+              <Upload size={12} />
+              Upload Template
+            </a>
+          </div>
         </motion.div>
       )}
     </nav>
