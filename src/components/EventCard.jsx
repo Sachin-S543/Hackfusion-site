@@ -1,11 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, Users, Trophy, ArrowRight, Download, Upload } from 'lucide-react';
+import { Calendar, MapPin, Users, Trophy, ArrowRight } from 'lucide-react';
 
 export default function EventCard() {
   const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLScCQPEPiyCjwCh6hwjfO0QaDMjrZFRSv2V1bvIjD7GY7j__1Q/viewform?usp=publish-editor";
-  const downloadTemplateUrl = "/HackFusion Template.pptx";
-  const uploadTemplateUrl = "https://forms.gle/nf2kEGKAT1NkF8uA7";
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4 mt-6 mb-16 relative z-20">
@@ -96,8 +94,8 @@ export default function EventCard() {
 
         </div>
 
-        {/* 5. Button & Templates (Right aligned) */}
-        <div className="xl:pl-6 xl:border-l xl:border-white/5 flex-shrink-0 flex flex-col gap-3 items-center">
+        {/* 5. Button (Right aligned) */}
+        <div className="xl:pl-6 xl:border-l xl:border-white/5 flex-shrink-0">
           <motion.a
             href={googleFormUrl}
             target="_blank"
@@ -108,31 +106,8 @@ export default function EventCard() {
           >
             Register Your Team <ArrowRight size={15} />
           </motion.a>
-          
-          <div className="flex flex-col sm:flex-row items-center gap-3 w-full justify-center">
-            <motion.a 
-              href={downloadTemplateUrl}
-              download="HackFusion Template.pptx"
-              className="flex items-center justify-center gap-2 w-full sm:w-auto px-5 py-3 rounded-xl font-spaceGrotesk text-xs font-bold text-white bg-gradient-to-r from-accentBlue to-[#526DFF] shadow-[0_4px_20px_rgba(45,127,249,0.25)] hover:shadow-[0_4px_30px_rgba(45,127,249,0.45)] hover:brightness-105 transition-all duration-300 cursor-pointer"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <Download size={15} />
-              Download Template
-            </motion.a>
-            <motion.a 
-              href={uploadTemplateUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full sm:w-auto px-5 py-3 rounded-xl font-spaceGrotesk text-xs font-bold text-white bg-gradient-to-r from-[#526DFF] to-accentPurple shadow-[0_4px_20px_rgba(124,92,255,0.25)] hover:shadow-[0_4px_30px_rgba(124,92,255,0.45)] hover:brightness-105 transition-all duration-300 cursor-pointer"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <Upload size={15} />
-              Upload Template
-            </motion.a>
-          </div>
         </div>
+
 
       </motion.div>
     </div>
