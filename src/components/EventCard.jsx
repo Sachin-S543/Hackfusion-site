@@ -96,16 +96,12 @@ export default function EventCard() {
 
         {/* 5. Button (Right aligned) */}
         <div className="xl:pl-6 xl:border-l xl:border-white/5 flex-shrink-0">
-          <motion.a
-            href={googleFormUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 w-full sm:w-auto px-5 py-3 rounded-xl font-spaceGrotesk text-xs font-bold text-white bg-gradient-to-r from-accentBlue via-[#4785FF] to-accentPurple shadow-[0_4px_20px_rgba(45,127,249,0.35)] hover:shadow-[0_4px_30px_rgba(45,127,249,0.6)] hover:brightness-105 transition-all duration-300"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.98 }}
+          <button
+            disabled
+            className="flex items-center justify-center gap-2 w-full sm:w-auto px-5 py-3 rounded-xl font-spaceGrotesk text-xs font-bold text-white/40 bg-white/5 border border-white/10 cursor-not-allowed select-none"
           >
-            Register Your Team <ArrowRight size={15} />
-          </motion.a>
+            Registration Closed
+          </button>
         </div>
 
 

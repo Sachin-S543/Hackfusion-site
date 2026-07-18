@@ -17,12 +17,12 @@ export default function Timeline() {
     {
       date: 'August 1, 2026',
       title: 'Shortlist Announcement',
-      desc: 'The jury of industry experts selects the top teams to proceed to the physical hacking stage at the college campus.'
+      desc: 'The internal jury panel will evaluate all submitted projects by reviewing the project links provided in the submitted Pitch Decks. Based on the innovation, implementation, technical feasibility, and overall quality of the solution, the top-performing teams will be shortlisted. Shortlisted teams will be notified via email with further instructions for the Grand Finale.'
     },
     {
       date: 'August 7, 2026',
       title: 'The Grand Finale',
-      desc: 'Non-stop coding, prototyping, mentorship check-ins, and final pitch presentations before the jury panels.',
+      desc: 'A full day of innovation featuring check-ins, final pitch presentations before the jury panel, project evaluations, networking opportunities, and the prize distribution ceremony to recognize the winning teams.',
       timings: '9:00 a.m. to 7:00 p.m.'
     }
   ];

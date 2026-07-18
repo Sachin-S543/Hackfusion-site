@@ -89,16 +89,12 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex flex-col items-center gap-2">
-          <motion.a
-            href={googleFormUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-2 rounded-full font-spaceGrotesk text-xs lg:text-sm font-bold text-white bg-gradient-to-r from-accentBlue via-[#526DFF] to-accentPurple shadow-[0_4px_15px_rgba(45,127,249,0.35)] hover:shadow-[0_4px_25px_rgba(45,127,249,0.55)] hover:brightness-105 transition-all duration-300"
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.98 }}
+          <button
+            disabled
+            className="flex items-center gap-2 px-5 py-2 rounded-full font-spaceGrotesk text-xs lg:text-sm font-bold text-white/40 bg-white/5 border border-white/10 cursor-not-allowed select-none"
           >
-            Register Now <ArrowRight size={15} />
-          </motion.a>
+            Registration Closed
+          </button>
           
           <div className="flex items-center gap-2 text-white select-none">
             <motion.a 
@@ -153,14 +149,12 @@ export default function Navbar() {
               {item.label}
             </button>
           ))}
-          <a
-            href={googleFormUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 w-full py-3 rounded-full font-spaceGrotesk font-bold text-white bg-gradient-to-r from-accentBlue to-accentPurple mt-2"
+          <button
+            disabled
+            className="flex items-center justify-center gap-2 w-full py-3 rounded-full font-spaceGrotesk font-bold text-white/40 bg-white/5 border border-white/10 mt-2 cursor-not-allowed select-none"
           >
-            Register Now <ArrowRight size={18} />
-          </a>
+            Registration Closed
+          </button>
           
           <div className="grid grid-cols-2 gap-3 mt-2">
             <a
